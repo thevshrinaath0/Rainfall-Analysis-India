@@ -1,6 +1,6 @@
 [![Python CI](https://github.com/thevshrinaath0/Rainfall-Analysis-India/actions/workflows/CI.yml/badge.svg)](https://github.com/thevshrinaath0/Rainfall-Analysis-India/actions/workflows/CI.yml)
 
-# 🌦️ India Rainfall Analysis & Prediction (2010–2024)
+# 🌦️ India Rainfall Analysis & Prediction (2009–2024)
 
 **A data-driven project analyzing and predicting rainfall patterns across Indian states from 2010 to 2024.**
 
@@ -8,7 +8,7 @@
 
 ## 📖 Overview
 
-This project focuses on **analyzing rainfall trends across Indian states** using historical data (2010–2024) and building a **machine learning model** to understand rainfall deviation and predict future rainfall patterns.
+This project focuses on **analyzing rainfall trends across Indian states** using historical data (2009–2024) and building a **machine learning model** to understand rainfall deviation and predict future rainfall patterns.
 
 It is designed with an **end-to-end MLOps-style workflow** — including **data fetching, preprocessing, exploratory data analysis (EDA), model training**, and **automated testing** — all streamlined through a `Makefile` and GitHub CI pipeline.
 

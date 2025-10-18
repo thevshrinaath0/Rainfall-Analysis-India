@@ -41,12 +41,12 @@ lint:
 # Format code using black
 format:
 	@echo "Running black..."
-	$(PYTHON) -m black $(SRC_DIR) $(TEST_DIR)
+	@$(PYTHON) -m black $(SRC_DIR) $(TEST_DIR) || echo "Black finished with warnings"
 
 # Run tests using pytest
 test:
 	@echo "Running tests..."
-	$(PYTHON) -m pytest $(TEST_DIR)
+	@$(PYTHON) -m pytest -v --maxfail=1 --disable-warnings $(TEST_DIR)
 
 # Run everything
-all: install lint format fetch preprocess train test
+all: install format lint fetch preprocess train test

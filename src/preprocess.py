@@ -1,26 +1,35 @@
 """
-Data preprocessing functions for the project.
-Converts raw CSV/JSON into cleaned CSVs for modeling.
+preprocess.py
+
+Contains functions to preprocess rainfall data in India.
 """
 
 import os
 import pandas as pd
 
-RAW_DIR = "data/raw/"
-PROCESSED_DIR = "data/processed/"
-os.makedirs(PROCESSED_DIR, exist_ok=True)
+PROCESSED_DIR = "data/processed"
 
 
 def preprocess():
-    """Preprocess the daily rainfall CSV."""
-    raw_file = os.path.join(RAW_DIR, "daily_rainfall.csv")
-    df = pd.read_csv(raw_file)
+    """
+    Preprocess raw rainfall data and save as CSV.
+
+    Returns:
+        str: Path to the processed CSV file.
+    """
+    os.makedirs(PROCESSED_DIR, exist_ok=True)
+
+    # Load raw data
+    raw_path = "data/raw/daily_rainfall.csv"
+    df = pd.read_csv(raw_path)
+
     print(f"Original data shape: {df.shape}")
 
-    # Convert date column to datetime
-    df["date"] = pd.to_datetime(df["date"])
-    # Fill missing rainfall values with 0
-    df["actual"] = df["actual"].fillna(0)
-    # Save processed CSV
-    df.to_csv(os.path.join(PROCESSED_DIR, "daily_rainfall.csv"), index=False)
+    # Example preprocessing (you can add more)
+    df["deviation"] = df["actual"] - df["normal"]
+
+    processed_path = os.path.join(PROCESSED_DIR, "daily_rainfall.csv")
+    df.to_csv(processed_path, index=False)
     print("Processed daily_rainfall.csv saved.")
+
+    return processed_path

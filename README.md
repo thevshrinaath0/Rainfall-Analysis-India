@@ -1,3 +1,5 @@
+[![Python CI](https://github.com/thevshrinaath0/Rainfall-Analysis-India/actions/workflows/CI.yml/badge.svg)](https://github.com/thevshrinaath0/Rainfall-Analysis-India/actions/workflows/CI.yml)
+
 # 🌦️ India Rainfall Analysis & Prediction (2010–2024)
 
 **A data-driven project analyzing and predicting rainfall patterns across Indian states from 2010 to 2024.**

@@ -14,26 +14,28 @@ It is designed with an **end-to-end MLOps-style workflow** — including **data 
 
 ## 🧩 Project Structure
 
-India-Rainfall-Analysis/
+```bash
+Rainfall-Analysis-India
 ├── data/
-│ ├── raw/ # Original rainfall datasets
-│ ├── processed/ # Cleaned data after preprocessing
+│   ├── raw/                # Original rainfall datasets
+│   ├── processed/          # Cleaned data after preprocessing
 │
 ├── src/
-│ ├── fetch_data.py # Fetches or loads rainfall data
-│ ├── preprocess.py # Cleans and prepares data
-│ ├── train_model.py # Trains regression model on rainfall data
-│ ├── predict.py # (Optional) Generates predictions
+│   ├── fetch_data.py       # Fetches or loads rainfall data
+│   ├── preprocess.py       # Cleans and prepares data
+│   ├── train_model.py      # Trains regression model on rainfall data
+│   ├── predict.py          # (Optional) Generates predictions
 │
 ├── tests/
-│ ├── test_fetch_data.py # Tests for data fetching
-│ ├── test_preprocess.py # Tests for preprocessing pipeline
-│ ├── test_model.py # Tests for model training and validation
+│   ├── test_fetch_data.py  # Tests for data fetching
+│   ├── test_preprocess.py  # Tests for preprocessing pipeline
+│   ├── test_model.py       # Tests for model training and validation
 │
-├── requirements.txt # Python dependencies
-├── Makefile # Automates commands (install, test, lint, etc.)
+├── requirements.txt        # Python dependencies
+├── Makefile                # Automates commands (install, test, lint, etc.)
 ├── .github/workflows/CI.yml # Continuous integration pipeline
-└── README.md # Project documentation
+└── README.md               # Project documentation
+```
 
 
 ---
@@ -42,8 +44,8 @@ India-Rainfall-Analysis/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/india-rainfall-analysis.git
-cd india-rainfall-analysis b
+git clone https://github.com/your-username/Rainfall-Analysis-India
+cd Rainfall-Analysis-India b
 ```
 ### 2️⃣ Create and Activate a Virtual Environment
 ```bash
@@ -94,7 +96,9 @@ Data Period: 2010 – 2024
 Coverage: All Indian states and union territories
 Source: IMD / open rainfall datasets (for project-based learning)
 
-##🧩 Model Details
+---
+
+## 🧩 Model Details
 
 - Algorithm: Linear Regression (baseline model)
 - Features Used:
@@ -146,3 +150,30 @@ make lint
 make format
 make test
 ```
+---
+
+## 👨‍💻 Author
+
+Developed by: Thev Shri Naath G <br>
+Domain: MLOps | Data Science | Environmental Modeling <br>
+Platform: GitHub Codespaces (Linux)
+
+---
+
+## 📜 License
+Licensed under the [MIT License](https://github.com/thevshrinaath0/Rainfall-Analysis-India/blob/main/LICENSE) — free to use, modify, and distribute with attribution.
+
+## GitHub Repository Info
+
+Repository Name:
+india-rainfall-analysis (recommended)
+
+Short Description:
+
+  “Data analysis and machine learning project on India’s rainfall patterns (2010–2024) with preprocessing, EDA, and model training pipelines.”
+
+Tags:
+#rainfall #India #climate-data #data-analysis #machine-learning #MLOps
+
+---
+
